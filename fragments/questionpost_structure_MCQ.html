@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="./imgs/favicon.ico">
+	<title>InterviewX</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Custom styles for this page-->
+	<link href="./styles/main.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<?php
+		include_once 'addins/fbLogin/fbLogin.php';
+		include_once 'addins/googleLogin/googleLogin.php'; 
+	?>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<ul class="navbar-text navbar-left">
+				<a href="#" class="navbar-link">InterviewMile</a>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</li>
+				<li><a href="#">Signed in as</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						Guest<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li>
+							<center>
+								<div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true"></div>
+							</center>
+						</li>
+						<li>
+							<center>
+								<div class="g-signin2"></div>
+							</center>
+						</li>
+					</ul></li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="Menu bar" style="width: 700px; margin: 0 auto; ">
+		<ul class="nav nav-pills">
+			<li role="presentation" class="active"><a href="#">Home</a></li>
+			<li role="presentation"><a href="#">Stats</a></li>
+			<li role="presentation"><a href="#">Trees</a></li>
+			<li role="presentation"><a href="#">Linked List</a></li>
+			<li role="presentation"><a href="#">Graphs</a></li>
+			<li role="presentation"><a href="#">Algos</a></li>
+			<li role="presentation"><a href="#">C++</a></li>
+			<li role="presentation"><a href="#">Dynamic Programming</a></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	
+	
+	<div id="main content" style="width: 700px; margin: 0 auto;">
+		<div>
+			<h2>Add your Question here</h2>
+		</div>
+		<br>
+		<ul class="nav nav-tabs nav-justified">
+			<li role="presentation" ><a href="questionpost_structure_non_MCQ.html">Non MCQ</a></li>
+			<li role="presentation" class="active"><a href="questionpost_structure_MCQ.html">MCQ</a></li>
+		</ul>
+		<br>
+		<br>
+		<div class="input-group" >
+			<span class="input-group-addon" id="basic-addon1">Q</span>
+				<input type="text" class="form-control" placeholder="Question" aria-describedby="basic-addon1">
+		</div>	
+		<br>
+		<div id="answerstothemcq" style="overflow:hidden" >
+			<div class="col-lg-6" >
+				<div class="input-group">
+					<span class="input-group-addon">
+						<input type="radio" aria-label="...">
+					</span>
+						<input type="text" class="form-control" aria-label="...">
+					
+				</div><!-- /input-group -->
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon">
+						<input type="radio" aria-label="...">
+					</span>
+						<input type="text" class="form-control" aria-label="...">
+					
+				</div><!-- /input-group -->
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon">
+						<input type="radio" aria-label="...">
+					</span>
+						<input type="text" class="form-control" aria-label="...">
+					
+				</div><!-- /input-group -->
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon">
+						<input type="radio" aria-label="...">
+					</span>
+						<input type="text" class="form-control" aria-label="...">
+					
+				</div><!-- /input-group -->
+			</div><!-- /.col-lg-6 -->
+		</div>
+		<br>
+		<br>
+		<div id="button">
+			<button type="button" class="btn btn-primary">Submit</button>
+			<button type="button" class="btn btn-primary">Clear</button>
+		</div>
+	
+	</div>
+	
+	
+	<!-- /.container -->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
